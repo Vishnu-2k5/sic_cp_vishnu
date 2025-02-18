@@ -1,0 +1,71 @@
+Microsoft Windows [Version 10.0.26100.3194]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Learning\Python\sic\sic_cp_vishnu\Day2>mysql --version
+mysql  Ver 8.0.41 for Win64 on x86_64 (MySQL Community Server - GPL)
+
+C:\Learning\Python\sic\sic_cp_vishnu\Day2>mysql -u root -p
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 21
+Server version: 8.0.41 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select databases();
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databases()' at line 1
+mysql> select database();
++------------+
+| database() |
++------------+
+| NULL       |
++------------+
+1 row in set (0.00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> create database vishnu_db;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| vishnu_db          |
+| world              |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> use vishnu_db;
+Database changed
+mysql> select database();
++------------+
+| database() |
++------------+
+| vishnu_db  |
++------------+
+1 row in set (0.00 sec)
+
+mysql>
