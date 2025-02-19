@@ -9,17 +9,23 @@ def fibonacci(n):
         b=next_term
 def prime_numbers(n):
     global prime_list
-    c=0
-    for i in range(2,n):
-        if n%i==0:
-            c=1
-            continue
-        else:
-            prime_list.append(i)
+    i=0
+    k=2
+    while i<n:
+        c=1
+        for j in range(2,k):
+            if k%j==0:
+                c=0
+        if c:
+            prime_list.append(k)
+            i+=1
+        k+=1
 a,b=1,2
 prime_list=[]
 fibonacci_list=[a,b]
-n=5
+n=8
 fibonacci(n)
 prime_numbers(n)
-print(sorted(prime_list+fibonacci_list))
+combined_list=sorted(prime_list+fibonacci_list)
+print(combined_list)
+print(combined_list[n])
