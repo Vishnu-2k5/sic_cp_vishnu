@@ -12,16 +12,6 @@ def disconnect_db(connection):
         print('DB Disconnecetd')
     except:
         print("DB Disconnection failed")
-def create_db():
-    connection=connect_db()
-    query='create database IF NOT EXISTS vishnu_db'
-    cursor=connection.cursor()
-    cursor.execute(query)
-    cursor.close()
-    disconnect_db(connection)
-def insert_row():
-    connection=connect_db()
 connection=connect_db()
 if connection:
-    disconnect_db(connection)    
-create_db()
+    disconnect_db(connection)
