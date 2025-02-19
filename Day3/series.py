@@ -23,9 +23,9 @@ def prime_numbers(n):
 a,b=1,2
 prime_list=[]
 fibonacci_list=[a,b]
-n=8
+n=13
 fibonacci(n)
 prime_numbers(n)
 combined_list=sorted(prime_list+fibonacci_list)
 print(combined_list)
-print(combined_list[n])
+print(combined_list[n-1])
