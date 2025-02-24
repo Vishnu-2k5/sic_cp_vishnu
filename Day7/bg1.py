@@ -11,7 +11,6 @@ for i in range(t):
             continue
         else:
             res=False
-    print(students)
     if  not res:
         for i in range(0,len(students),2):
             if (students[i] in g and students[i+1] in b ):
