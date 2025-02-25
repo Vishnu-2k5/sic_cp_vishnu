@@ -5,7 +5,7 @@ import seaborn as sns
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 # Load the dataset
-df = pd.read_csv('C:\\Learning\\IPLData.csv')
+df = pd.read_csv('C:\\Learning\\Python\\sic\\sic_cp_vishnu\\Day8\\IPLData.csv')
 
 # Reading the data
 print(df)

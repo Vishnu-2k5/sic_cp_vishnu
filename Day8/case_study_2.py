@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Loading the dataset
-df = pd.read_csv('C:\\Learning\\WineQT.csv')
+df = pd.read_csv('C:\\Learning\\Python\\sic\\sic_cp_vishnu\\Day8\\WineQT.csv')
 print(df.head())
 
 # Statistical information

@@ -12,7 +12,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 # Load the dataset
 # The dataset contains information about various movies, including budget, earnings, genre, and production studio.
-df = pd.read_csv('C:\\Learning\\movies.csv')
+df = pd.read_csv('C:\\Learning\\Python\\sic\\sic_cp_vishnu\\Day8\\movies.csv')
 
 # Display the first few rows of the dataset
 print(df)

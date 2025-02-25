@@ -5,7 +5,7 @@ import seaborn as sns
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 # Load the dataset
-df = pd.read_csv('C:\\Learning\\employees.csv')
+df = pd.read_csv('C:\\Learning\\Python\\sic\\sic_cp_vishnu\\Day8\\employees.csv')
 
 # Display first few rows of the dataset
 print(df.head()) 

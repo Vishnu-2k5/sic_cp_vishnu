@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the dataset
-df = pd.read_csv("C:\\Learning\\Book2.csv")
+df = pd.read_csv('C:\\Learning\\Python\\sic\\sic_cp_vishnu\\Day8\\Book2.csv')
 
 # Display first few rows to understand the structure of the dataset
 print(df.head())
