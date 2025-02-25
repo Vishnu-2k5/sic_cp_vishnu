@@ -10,7 +10,8 @@ df = pd.read_csv('C:\\Learning\\Python\\sic\\sic_cp_vishnu\\Hackathon\\Engineeri
 # Reading the data
 print(df)
 
-#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#Which branch offers the best combination of internships and placements? (Compare internship percentage and placement percentage)
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Which branch offers the best combination of internships and placements? (Compare internship percentage and placement percentage)
 data={'Internship(%)':df['Internships (%)'],'Placement(%)':df['Placements (%)']} #Dictionary with data
 dataframe=pd.DataFrame(data) #creating a dataframe
 dataframe.plot(kind='bar',figsize=(10,10)) #plotting of dataframe
@@ -28,7 +29,8 @@ max_name = df.loc[df['Best Combination'].idxmax(), 'Branch Name'] #to find branc
 print("The branch that offers the best combination of internships and placements:",max_name)
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#Which branch provides the best career prospects? (Consider average salary, placements)
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Which branch provides the best career prospects? (Consider average salary, placements)
 df['Placements (%)']=df['Placements (%)']/10 #dividing placement value with 10 because lpa values are in integer form(single/double digit), so get better graph, it is divided by 10
 data2={'Average Salary (LPA)':df['Average Salary (INR)'],'Placement(%) out of 100':df['Placements (%)']} #Dictionary with data
 dataframe2=pd.DataFrame(data2) #creating a dataframe

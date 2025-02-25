@@ -1,0 +1,21 @@
+My task was to find :
+
+1. Which branch offers the best combination of internships and placements? (Compare internship percentage and placement percentage)
+2. Which branch provides the best career prospects? (Consider average salary, placements)
+3. Which branch has the lowest Dropout Rate?
+
+
+
+I had to find this by using the given data set
+
+
+
+I have divided my program in 3 different segments:
+
+1st Part contains solution for 1st question mentioned above. I have created a bar plot for comparing internship and placement of every branch and i have found out the mean of it for every branch and then found out the suitable branch by finding the maximum value.
+
+2nd part contains solution for 2nd question mentioned above. I have created a bar plot where i divided the placement percentage value by 10 in order to get a better graph as the salary value was an integer within a range of 15 and placement percentage values are above 50, so by dividing i was able to get a graph where the bars dont differ a lot in height, later i changed the values of placement percentage by multiplying it with 10. Here which has the maximum value in salary and placement value(when divided by 10), that corresponding branch name has been displayed.
+
+3rd part contains solution for 3rd question mentioned above. I have created a pie chart to find out the dropout rate percentage from the values given in the dataset, by finding the minimum value i have found the branch which has the least dropout rate.
+
+This was my part and it completed, how every segment works, even line by line has been mentioned in the comments by me.
